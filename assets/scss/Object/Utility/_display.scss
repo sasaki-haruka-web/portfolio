@@ -1,0 +1,11 @@
+.u-pc-hide {
+  @include tabpc {
+    display: none !important;
+  }
+}
+
+.u-sp-hide {
+  @include sp {
+    display: none !important;
+  }
+}

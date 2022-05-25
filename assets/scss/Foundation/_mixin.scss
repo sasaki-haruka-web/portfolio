@@ -1,0 +1,32 @@
+@import "./_variable";
+
+@mixin tabpc{
+  @media screen and (min-width: ($tabpc)){
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+@mixin sptab {
+  @media screen and (max-width: ($sptab)) {
+    @content;
+  }
+}
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin pcwide {
+  @media screen and (min-width: ($pcmin + 1)) {
+    @content;
+  }
+}
+@mixin pcmin {
+  @media screen and (max-width: ($pcmin)) {
+    @content;
+  }
+}

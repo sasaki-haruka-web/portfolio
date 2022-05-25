@@ -1,0 +1,59 @@
+:root {
+  --animate-delay: 0.1s;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem > 10px */
+}
+
+body {
+  line-height: 1.75;
+  font-family: $font_main;
+  color: $cmn_color01;
+  @include sp {
+    font-size: 1.4rem;
+  }
+  @include tabpc {
+    font-size: 1.6em;
+  }
+}
+
+a {
+  color: $link_color;
+}
+a img{
+  transition: $trans_cmn;
+}
+a img:hover{
+  opacity: .7;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+}
+
+h1 {
+  font-size: inherit;
+}
+
+.contents {
+  //max-width: $pcinner;
+  //width: 100%;
+  //margin: 0 auto;
+}
+
+.wrapper__contents {
+  position: relative;
+}
+
+.u-spWrap {
+  @include sp {
+    padding: 0 20px;
+  }
+}
+
+.fwb {
+  font-weight: bold;
+}

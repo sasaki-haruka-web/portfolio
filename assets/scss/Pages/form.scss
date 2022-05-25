@@ -1,0 +1,12 @@
+@import "../foundation/_variable";
+@import "../foundation/_mixin";
+
+.form{
+  .l-footer{
+    margin-top: 0;
+    padding: 0 0 60px;
+    .c-gotop{
+      top: -35px;
+    }
+  }
+}

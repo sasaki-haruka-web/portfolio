@@ -1,0 +1,49 @@
+@import "../foundation/_variable";
+@import "../foundation/_mixin";
+
+.complete{
+  .contents{
+    background: #F7F7F7;
+    padding: 65px 0 180px;
+    &__wrap{
+      display: flex;
+      justify-content: space-between;
+      @include sp{
+        display: block;
+      }
+      &-lb{
+        @include sp{
+          text-align: center;
+        }
+      }
+      &-rb{
+        @include sp{
+          margin-top: 50px;
+        }
+      }
+
+    }
+    &__ttl{
+      font-size: 2.8rem;
+      color: $txt_color01;
+    }
+    &__txt{
+      font-size: 1.4rem;
+      color: $txt_color01;
+      margin-top: 15px;
+    }
+    &__btn{
+      margin-top: 60px;
+      @include sp{
+        margin-top: 30px;
+      }
+    }
+  }
+  .l-footer{
+    margin-top: 0;
+    padding: 0 0 60px;
+    .c-gotop{
+      top: -35px;
+    }
+  }
+}

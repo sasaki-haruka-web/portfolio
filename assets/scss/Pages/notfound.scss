@@ -1,0 +1,103 @@
+@import "../foundation/_variable";
+@import "../foundation/_mixin";
+
+.notfound {
+  .l-main {
+    @include sp {
+      padding-top: 85px;
+    }
+  }
+  &__contents {
+    background-color: $cmn_color08;
+    padding-bottom: 110px;
+    @include sp {
+      padding: 0 25px 110px;
+    }
+  }
+  &__contents {
+  }
+  &__inner {
+    padding-top: 65px;
+    @include sp {
+      padding-top: 35px;
+    }
+    &Pic {
+      width: 200px;
+      height: 80px;
+      @include sp {
+        width: 155px;
+        height: 65px;
+      }
+    }
+    &Lead {
+      font-family: $font_open;
+      font-size: 4.1rem;
+      color: $cmn_color02;
+      font-weight: 300;
+      @include sp {
+        font-size: 3rem;
+      }
+    }
+    &Box {
+      margin: 0 auto;
+      max-width: 518px;
+      border-radius: 4px;
+      text-align: center;
+      background-color: $white;
+      padding: 65px 50px 45px;
+      @include sp {
+        padding: 45px 30px;
+      }
+    }
+    &Btn {
+      width: 176px;
+      margin: 45px auto 0;
+      @include sp {
+        margin: 30px auto 0;
+      }
+    }
+  }
+
+  &__txt {
+    &-jp {
+      color: $txt_color01;
+      font-size: 2.1rem;
+      margin-top: 40px;
+
+      @include sp {
+        font-size: 1.4rem;
+        margin-top: 30px;
+      }
+    }
+    &-en {
+      font-size: 1.3rem;
+      color: #b4b4b4;
+      margin-top: 15px;
+
+      @include sp {
+        font-size: 1.3rem;
+      }
+    }
+    &Info {
+      font-size: 1.4rem;
+      color: $txt_color01;
+      background-color: $cmn_color08;
+      border-radius: 6px;
+      padding: 20px 60px;
+      margin: 30px auto 0;
+      max-width: 390px;
+      @include sp {
+        font-size: 1.3rem;
+        padding: 20px;
+        margin: 20px auto 0;
+      }
+    }
+  }
+  .l-footer {
+    margin-top: 0;
+    padding: 0 0 60px;
+    .c-gotop {
+      top: -35px;
+    }
+  }
+}

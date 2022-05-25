@@ -1,0 +1,9 @@
+.l-body{
+  margin: 0 auto;
+  @include tabpc{
+    min-width: $body-min-width;
+  }
+  @include sp{
+    min-width: 100%;
+  }
+}

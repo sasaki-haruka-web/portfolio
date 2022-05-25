@@ -1,0 +1,64 @@
+@import "../foundation/_variable";
+@import "../foundation/_mixin";
+
+.education{
+  .stepup{
+    &__lead{
+      margin-top: 15px;
+    }
+    &__timelineWrap{
+      margin-top: 40px;
+      .p-stepup{
+        &:not(:first-of-type){
+          margin-top: 80px;
+        }
+      }
+    }
+    &__btn{
+      text-align: center;
+      margin-top: 60px;
+      .c-btn{
+        @include sp{
+          font-size: 1.6rem;
+          padding: 20px 30px;
+        }
+      }
+    }
+    &__decisionCeremony{
+      margin-top: 45px;
+      @include sp{
+        margin-top: 100px;
+      }
+      &-pic{
+        display: block;
+        margin-top: 30px;
+      }
+    }
+    &__passingRate{
+      margin-top: 80px;
+      &-table{
+        margin-top: 30px;
+        table{
+          border: 1px solid $gray_color06;
+        }
+      }
+      &-lead{
+        margin-top: 30px;
+      }
+      &-txt{
+        margin-top: 10px;
+      }
+    }
+  }
+  .learn{
+    margin-top: 95px;
+    .p-gallery{
+      margin-top: 60px;
+      &__content{
+        .swiper-button-prev, .swiper-button-next{
+          top: 225px;
+        }
+      }
+    }
+  }
+}
