@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": "git+https://github.com/sasaki-haruka-web/portfolio.git",
+  "keywords": [],
+  "author": "sasaki  haruka(hakoreco) <sasaki@hakoreco.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasaki-haruka-web/portfolio/issues"
+  },
+  "homepage": "https://github.com/sasaki-haruka-web/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "sass": "^1.52.1"
+  }
+}

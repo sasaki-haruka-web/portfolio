@@ -9,7 +9,7 @@ html {
 
 body {
   line-height: 1.75;
-  font-family: $font_main;
+  font-family: $font_ja;
   color: $cmn_color01;
   @include sp {
     font-size: 1.4rem;
@@ -36,24 +36,4 @@ iframe {
 
 h1 {
   font-size: inherit;
-}
-
-.contents {
-  //max-width: $pcinner;
-  //width: 100%;
-  //margin: 0 auto;
-}
-
-.wrapper__contents {
-  position: relative;
-}
-
-.u-spWrap {
-  @include sp {
-    padding: 0 20px;
-  }
-}
-
-.fwb {
-  font-weight: bold;
 }

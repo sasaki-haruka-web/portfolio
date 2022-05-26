@@ -1,0 +1,47 @@
+.p-header{
+	&__inner{
+		display: flex;
+		padding: 20px 75px 0;
+		justify-content: space-between;
+	}
+	&__logo{}
+	&__nav{
+		display: flex;
+		align-items: center;
+		&-list{
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			gap: 0 75px;
+			li{
+				a{
+					font-family: $font_en;
+					color: #333333;
+					font-size: 1.8rem;
+					letter-spacing: .2rem;
+				}
+			}
+		}
+		&-contact{
+			position: relative;
+			color: white;
+			font-family: $font_en;
+			font-size: 1.8rem;
+			letter-spacing: .2rem;
+			background: #333333;
+			border-radius: 999px;
+			margin-left: 70px;
+			padding: 2px 55px 2px 30px;
+			&::after{
+				position: absolute;
+				content: '';
+				width: 15px;
+				height: 12px;
+				background:
+					url('../images/common/icn_mail.svg')
+					no-repeat center/contain;
+				top: 50%; right: 30px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

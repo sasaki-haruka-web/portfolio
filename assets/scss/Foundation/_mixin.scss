@@ -20,13 +20,3 @@
     @content;
   }
 }
-@mixin pcwide {
-  @media screen and (min-width: ($pcmin + 1)) {
-    @content;
-  }
-}
-@mixin pcmin {
-  @media screen and (max-width: ($pcmin)) {
-    @content;
-  }
-}

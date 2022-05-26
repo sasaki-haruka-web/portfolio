@@ -1,24 +1,23 @@
 // // ---------------------------------------------------------------
 // //  Base-Size
 // // ---------------------------------------------------------------
-// $base-size: 5;
-// $body-min-width: 1300px; //画面幅の最小値 ない場合はinitial
-// $wrap-width: 1100px; //wrapの幅 ない場合はauto
-// $wrap-max-width: 1600px; //最大幅 ない場合はinitial
-// $pc: 1025px;
-// $pcmin: 1340px; //ヘッダーの切り替え値
-// $tabpc: 768px;
-// $sp: 767px;
-// $sptab: 1024px;
+$base-size: 5;
+$body-min-width: 1300px; //画面幅の最小値 ない場合はinitial
+$wrap-width: 1100px; //wrapの幅 ない場合はauto
+$wrap-max-width: 1600px; //最大幅 ない場合はinitial
+$pc: 1025px;
+$pcmin: 1340px; //ヘッダーの切り替え値
+$tabpc: 768px;
+$sp: 767px;
+$sptab: 1024px;
 // // ---------------------------------------------------------------
 // //  Font
 // // ---------------------------------------------------------------
-// $font_main: 'Noto Sans JP','Helvatica' ,sans-serif;
-// $font_open: 'Open Sans', sans-serif;
-// $font_serif: 'Noto Serif', serif;
+$font_ja: 'Noto Sans JP','Helvatica' ,sans-serif;
+$font_en: 'Poppins', sans-serif;
 
-// $font-size-base: 16;
-// $font-weight-base: 500;
+$font-size-base: 16;
+$font-weight-base: 500;
 
 // // ---------------------------------------------------------------
 // //  Icon
@@ -34,7 +33,7 @@
 // //  color
 // // ---------------------------------------------------------------
 // //
-// $cmn_color01:#130E0F;
+$cmn_color01:#130E0F;
 // $cmn_color02:#F989AA;
 // $cmn_color03:#DF5695;
 // $cmn_color04:#AF7A80;
@@ -55,7 +54,7 @@
 
 // $txt_color01: #43333A;
 
-// $link_color: #2185D0;
+$link_color: #2185D0;
 
 // $grad_pink01: #FDA99E, #F882AC;
 // $grad_pink02: #D55280, #F78E80;
@@ -69,5 +68,5 @@
 // $white: #fff;
 
 
-// $trans_cmn: all 0.3s ease-in-out;
+$trans_cmn: all 0.3s ease-in-out;
 // $opa_cmn: 0.7;
