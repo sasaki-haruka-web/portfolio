@@ -4,8 +4,8 @@ var sass = require("gulp-sass")(require("sass"));
 const sassglob = require("gulp-sass-glob");
 
 const paths = {
-  styles: "./assets/scss/**/*.scss",
-  _styles: "!./assets/scss/**/_*.scss",
+  styles: "./src/scss/**/*.scss",
+  _styles: "!./src/scss/**/_*.scss",
 };
 
 
@@ -21,7 +21,7 @@ function styles() {
           // outputStyle: 'expanded'
         })
       )
-      .pipe(gulp.dest("./assets/css/"))
+      .pipe(gulp.dest("./src/css/"))
   );
 }
 

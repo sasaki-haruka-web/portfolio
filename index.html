@@ -5,17 +5,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/common.css">
+	<link rel="stylesheet" href="./src/css/common.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
 	<title>Sasaki Haruka | Portfolio</title>
 </head>
 
 <body class="l-body top">
 	<header class="p-header l-header">
 		<div class="p-header__inner">
-			<a href="" class="p-header__logo"><img src="assets/images/common/logo.svg" alt="web director Sasaki Haruka"></a>
+			<h1><a href="" class="p-header__logo"><img src="src/images/common/logo.svg" alt="web director Sasaki Haruka"></a></h1>
 			<nav class="p-header__nav">
 				<ul class="p-header__nav-list">
 					<li><a href="">Prolife</a></li>
@@ -30,15 +32,74 @@
 		<section class="fv">
 			<p class="fv__copyright">©2022 Sasaki Haruka</p>
 			<div class="fv__image">
-				<img src="assets/images/top/pic_fv_img01.jpg" alt="" class="fv__image-pic">
-				<img src="assets/images/top/txt_fv_img01.svg" alt="雑談とアイディアでときめくモノづくり" class="fv__image-txt">
-				<div class="fv__image-scroll">
+				<img src="src/images/top/pic_fv_img01.jpg" alt="" class="fv__image-pic">
+				<img src="src/images/top/txt_fv_img01.svg" alt="雑談とアイディアでときめくモノづくり" class="fv__image-txt">
+				<div class="fv__scroll">
 					<span>scroll</span>
 				</div>
 			</div>
 		</section>
-		<section class="profile"></section>
-		<section class="works"></section>
+		<div class="l-inner">
+			<section class="profile">
+				<h2 class="profile__ttl">Prolife</h2>
+				<div class="profile__content">
+					<div class="profile__lb">
+						<p class="profile__balloon">Let’s work together</p>
+						<img src="src/images/top/pic_profile_img01.png" alt="" class="profile__pic">
+					</div>
+					<div class="profile__rb">
+						<div class="profile__info">
+							<h3 class="profile__name">
+								<p><ruby>佐々木<rt>ささき</rt> 遥<rt>はるか</rt></ruby></p>
+							</h3>
+							<p class="profile__txt">Webディレクター／Webデザイナー／コーダー</p>
+							<h4 class="profile__feature">💪 スキル</h4>
+							<p class="profile__txt">HTML／CSS／js／XD／WordPress／軽いデザイン／ディレクション</p>
+							<h4 class="profile__feature">👤 ひととなり</h4>
+							<p class="profile__txt">喋ることとアイディアを考えることが好きです。<br>大学ではデザインだけでなく、心理学を通してグループワーク、創作活動、Well-beingについて研究していました。<br>お仕事は作り上げた成果物も大事ですが、その過程も同じくらい大事だと考えています。楽しくお仕事できてこそ、お客様にも良い影響を与えられます。私と一緒にときめくモノづくりをしましょう。</p>
+							<h4 class="profile__feature">🧡 好きなもの</h4>
+							<p class="profile__txt">創作／イラスト／旅行／ジャニーズ／K-POP</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="works">
+				<h2 class="works__ttl">Works</h2>
+				<div class="works__card-group">
+					<div class="works__card">
+						<a href="" class="works__card-link">
+							<img src="src/images/top/img_works_img01.png" alt="" class="works__card-image">
+							<div class="works__card-content">
+								<p class="works__card-txt">詳しく見る</p>
+							</div>
+						</a>
+						<h3 class="works__card-ttl">函館発新体験開発プロジェクト2018</h3>
+						<p class="works__card-cat">web制作</p>
+					</div>
+					<div class="works__card">
+						<a href="" class="works__card-link">
+							<img src="src/images/top/img_works_img02.png" alt="" class="works__card-image">
+							<div class="works__card-content">
+								<p class="works__card-txt">詳しく見る</p>
+							</div>
+						</a>
+						<h3 class="works__card-ttl">勤勉作曲家！テキトーベン</h3>
+						<p class="works__card-cat">キャラクターデザイン</p>
+					</div>
+					<div class="works__card">
+						<a href="" class="works__card-link">
+							<img src="src/images/top/img_works_img03.png" alt="" class="works__card-image">
+							<div class="works__card-content">
+								<p class="works__card-txt">詳しく見る</p>
+							</div>
+						</a>
+						<h3 class="works__card-ttl">華金市電</h3>
+						<p class="works__card-cat">web制作</p>
+					</div>
+				</div>
+				<p class="works__note">※ 企業で制作したものは載せることができません。<br>面接の際に口頭でご説明いたします。</p>
+			</section>
+		</div>
 		<section class="contact"></section>
 	</main>
 	<footer class="p-footer l-footer"></footer>
