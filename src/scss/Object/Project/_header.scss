@@ -10,7 +10,7 @@
 		align-items: center;
 		&-list{
 			display: grid;
-			grid-template-columns: repeat(3, auto);
+			grid-template-columns: repeat(2, auto);
 			gap: 0 75px;
 			li{
 				a{
@@ -28,19 +28,30 @@
 			font-size: 1.8rem;
 			letter-spacing: .2rem;
 			background: #333333;
+			border: 1px solid #333333;
 			border-radius: 999px;
 			margin-left: 70px;
 			padding: 2px 55px 2px 30px;
+			transition: $trans_cmn;
 			&::after{
 				position: absolute;
 				content: '';
 				width: 15px;
 				height: 12px;
 				background:
-					url('../images/common/icn_mail.svg')
+					url('../images/common/icn_mail_img01.svg')
 					no-repeat center/contain;
 				top: 50%; right: 30px;
 				transform: translateY(-50%);
+			}
+			&:hover{
+				color: #333333;
+				background: white;
+				&::after{
+					background:
+						url('../images/common/icn_mail_img02.svg')
+						no-repeat center/contain;
+				}
 			}
 		}
 	}

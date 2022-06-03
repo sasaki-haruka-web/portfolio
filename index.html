@@ -20,11 +20,11 @@
 			<h1><a href="" class="p-header__logo"><img src="src/images/common/logo.svg" alt="web director Sasaki Haruka"></a></h1>
 			<nav class="p-header__nav">
 				<ul class="p-header__nav-list">
-					<li><a href="">Prolife</a></li>
-					<li><a href="">Works</a></li>
-					<li><a href="">SNS</a></li>
+					<li><a href="#profile">Prolife</a></li>
+					<li><a href="#works">Works</a></li>
+					<!-- <li><a href="">SNS</a></li> -->
 				</ul>
-				<a href="" class="p-header__nav-contact">Contact</a>
+				<a href="#contact" class="p-header__nav-contact">Contact</a>
 			</nav>
 		</div>
 	</header>
@@ -40,7 +40,7 @@
 			</div>
 		</section>
 		<div class="l-inner">
-			<section class="profile">
+			<section class="profile" id="profile">
 				<h2 class="profile__ttl">Prolife</h2>
 				<div class="profile__content">
 					<div class="profile__lb">
@@ -63,14 +63,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="works">
+			<section class="works" id="works">
 				<h2 class="works__ttl">Works</h2>
 				<div class="works__card-group">
 					<div class="works__card">
 						<a href="" class="works__card-link">
 							<img src="src/images/top/img_works_img01.png" alt="" class="works__card-image">
 							<div class="works__card-content">
-								<p class="works__card-txt">詳しく見る</p>
+								<p class="works__card-readmore">詳しく見る</p>
 							</div>
 						</a>
 						<h3 class="works__card-ttl">函館発新体験開発プロジェクト2018</h3>
@@ -80,7 +80,7 @@
 						<a href="" class="works__card-link">
 							<img src="src/images/top/img_works_img02.png" alt="" class="works__card-image">
 							<div class="works__card-content">
-								<p class="works__card-txt">詳しく見る</p>
+								<p class="works__card-readmore">詳しく見る</p>
 							</div>
 						</a>
 						<h3 class="works__card-ttl">勤勉作曲家！テキトーベン</h3>
@@ -90,7 +90,7 @@
 						<a href="" class="works__card-link">
 							<img src="src/images/top/img_works_img03.png" alt="" class="works__card-image">
 							<div class="works__card-content">
-								<p class="works__card-txt">詳しく見る</p>
+								<p class="works__card-readmore">詳しく見る</p>
 							</div>
 						</a>
 						<h3 class="works__card-ttl">華金市電</h3>
@@ -100,9 +100,30 @@
 				<p class="works__note">※ 企業で制作したものは載せることができません。<br>面接の際に口頭でご説明いたします。</p>
 			</section>
 		</div>
-		<section class="contact"></section>
+		<section class="contact" id="contact">
+			<h2 class="contact__ttl">Contact</h2>
+			<form action="" method="post" class="contact__form">
+				<div class="contact__row">
+					<label for="name" class="contact__label">お名前<span class="contact__required">必須</span></label>
+					<input type="text" id="name" placeholder="例：佐藤太郎" required class="contact__input">
+				</div>
+				<div class="contact__row">
+					<label for="mail" class="contact__label">メールアドレス<span class="contact__required">必須</span></label>
+					<input type="email" id="mail" placeholder="例：example@mail.com" required class="contact__input">
+				</div>
+				<div class="contact__row">
+					<label for="content" class="contact__label">内容<span class="contact__required">必須</span></label>
+					<textarea name="" id="content" cols="30" rows="10" class="contact__input"></textarea>
+				</div>
+				<div class="contact__btn-wrap">
+					<div class="contact__btn"><input type="submit" value="送信" class="contact__btn-input"></div>
+				</div>
+			</form>
+		</section>
 	</main>
-	<footer class="p-footer l-footer"></footer>
+	<footer class="p-footer l-footer">
+		<p class="p-footer__copyright">© 2022 Sasaki Haruka</p>
+	</footer>
 </body>
 
 </html>

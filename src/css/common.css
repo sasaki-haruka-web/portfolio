@@ -477,6 +477,16 @@ h1 {
 * ========================== */
 /* Component ------------ */
 /* Project ------------ */
+.p-footer {
+  padding: 24px 0;
+}
+.p-footer__copyright {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
 .p-header__inner {
   display: flex;
   padding: 20px 75px 0;
@@ -488,7 +498,7 @@ h1 {
 }
 .p-header__nav-list {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   gap: 0 75px;
 }
 .p-header__nav-list li a {
@@ -504,19 +514,28 @@ h1 {
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   background: #333333;
+  border: 1px solid #333333;
   border-radius: 999px;
   margin-left: 70px;
   padding: 2px 55px 2px 30px;
+  transition: all 0.3s ease-in-out;
 }
 .p-header__nav-contact::after {
   position: absolute;
   content: "";
   width: 15px;
   height: 12px;
-  background: url("../images/common/icn_mail.svg") no-repeat center/contain;
+  background: url("../images/common/icn_mail_img01.svg") no-repeat center/contain;
   top: 50%;
   right: 30px;
   transform: translateY(-50%);
+}
+.p-header__nav-contact:hover {
+  color: #333333;
+  background: white;
+}
+.p-header__nav-contact:hover::after {
+  background: url("../images/common/icn_mail_img02.svg") no-repeat center/contain;
 }
 
 /* Utility ------------ */
@@ -4162,11 +4181,35 @@ h1 {
 .top .works__card-link img:hover {
   opacity: 1;
 }
-.top .works__card-link:hover {
+.top .works__card-link:hover .works__card-content {
   opacity: 1;
 }
-.top .works__card-link:hover::before {
+.top .works__card-content {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
   background: rgba(117, 157, 158, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.top .works__card-readmore {
+  display: flex;
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 87px;
+  margin: 25px;
 }
 .top .works__card-ttl {
   font-size: 1.8rem;
@@ -4184,4 +4227,98 @@ h1 {
   text-align: center;
   color: #808080;
   margin-top: 60px;
+}
+.top .contact {
+  background: #E9F2F2;
+  margin-top: 125px;
+  padding: 70px 0;
+}
+.top .contact__ttl {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.top .contact__form {
+  width: 850px;
+  margin: 10px auto 0;
+  padding: 60px 100px;
+  background: white;
+  border-radius: 20px;
+}
+.top .contact__row {
+  display: flex;
+}
+.top .contact__row:not(:first-of-type) {
+  margin-top: 25px;
+}
+.top .contact__label {
+  display: flex;
+  width: 185px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.top .contact__required {
+  display: inline-block;
+  height: max-content;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  color: white;
+  line-height: 1;
+  background: #B0D0D1;
+  padding: 7px 15px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.top .contact__input {
+  width: 412px;
+  font-size: 1.4rem;
+  border: 1px solid #DEDEDF;
+  border-radius: 4px;
+  margin-left: 50px;
+  padding: 10px 15px;
+}
+.top .contact__input::placeholder {
+  color: #B5B5B5;
+}
+.top .contact__input::-ms-input-placeholder {
+  color: #B5B5B5;
+}
+.top .contact__btn {
+  display: inline-block;
+  position: relative;
+}
+.top .contact__btn::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  top: 50%;
+  right: 24px;
+  transform: translate(0, -50%) rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
+.top .contact__btn-wrap {
+  text-align: center;
+  margin-top: 45px;
+}
+.top .contact__btn-input {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: #B0D0D1;
+  padding: 15px 105px;
+  border: 2px solid #B0D0D1;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+}
+.top .contact__btn:hover .contact__btn-input {
+  color: #B0D0D1;
+  background: white;
+}
+.top .contact__btn:hover::before {
+  border-color: #B0D0D1;
 }
