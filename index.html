@@ -16,16 +16,35 @@
 
 <body class="l-body top">
 	<header class="p-header l-header">
-		<div class="p-header__inner">
+		<div class="p-header--pc">
+			<div class="p-header__inner">
+				<h1><a href="" class="p-header__logo"><img src="src/images/common/logo.svg" alt="web director Sasaki Haruka"></a></h1>
+				<nav class="p-header__nav">
+					<ul class="p-header__nav-list">
+						<li><a href="#profile">Prolife</a></li>
+						<li><a href="#works">Works</a></li>
+						<!-- <li><a href="">SNS</a></li> -->
+					</ul>
+					<a href="#contact" class="p-header__nav-contact">Contact</a>
+				</nav>
+			</div>
+		</div>
+		<div class="p-header--sp">
+			<div class="p-header__btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<h1><a href="" class="p-header__logo"><img src="src/images/common/logo.svg" alt="web director Sasaki Haruka"></a></h1>
-			<nav class="p-header__nav">
-				<ul class="p-header__nav-list">
-					<li><a href="#profile">Prolife</a></li>
-					<li><a href="#works">Works</a></li>
-					<!-- <li><a href="">SNS</a></li> -->
-				</ul>
-				<a href="#contact" class="p-header__nav-contact">Contact</a>
-			</nav>
+			<div class="p-header__menu">
+				<nav class="p-header__nav">
+					<ul class="p-header__list">
+						<li class="p-header__list-item"><a href="#profile" class="p-header__list-link">Prolife</a></li>
+						<li class="p-header__list-item"><a href="#works" class="p-header__list-link">Works</a></li>
+					</ul>
+					<a href="#contact" class="p-header__contact">Contact</a>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main class="l-main">
@@ -102,18 +121,18 @@
 		</div>
 		<section class="contact" id="contact">
 			<h2 class="contact__ttl">Contact</h2>
-			<form action="" method="post" class="contact__form">
+			<form action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSdtUAy7jqjhSL4USklQmKeMj7PxalMuIktdT4n3GcR61G1v1A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" class="contact__form">
 				<div class="contact__row">
 					<label for="name" class="contact__label">お名前<span class="contact__required">必須</span></label>
-					<input type="text" id="name" placeholder="例：佐藤太郎" required class="contact__input">
+					<input type="text" name="entry.1579622882" id="name" placeholder="例：佐藤太郎" required class="contact__input">
 				</div>
 				<div class="contact__row">
 					<label for="mail" class="contact__label">メールアドレス<span class="contact__required">必須</span></label>
-					<input type="email" id="mail" placeholder="例：example@mail.com" required class="contact__input">
+					<input type="email" name="entry.1412926306" id="mail" placeholder="例：example@mail.com" required class="contact__input">
 				</div>
 				<div class="contact__row">
 					<label for="content" class="contact__label">内容<span class="contact__required">必須</span></label>
-					<textarea name="" id="content" cols="30" rows="10" class="contact__input"></textarea>
+					<textarea name="entry.179231252" id="content" cols="30" rows="10" class="contact__input"></textarea>
 				</div>
 				<div class="contact__btn-wrap">
 					<div class="contact__btn"><input type="submit" value="送信" class="contact__btn-input"></div>
@@ -124,6 +143,17 @@
 	<footer class="p-footer l-footer">
 		<p class="p-footer__copyright">© 2022 Sasaki Haruka</p>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="./src/js/common.js"></script>
+	<script type="text/javascript">
+    let submitted = false;
+	</script>
+	<iframe
+			name="hidden_iframe"
+			id="hidden_iframe"
+			style="display: none"
+			onload="if(submitted){window.location='complete.html';}"
+	></iframe>
 </body>
 
 </html>

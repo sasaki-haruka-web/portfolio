@@ -4,23 +4,42 @@
 		align-items: center;
 		margin-top: 25px;
 		padding: 0 35px;
+		@include sp{
+			margin-top: 85px;
+			padding: 0 25px;
+		}
 		&__copyright{
 			-ms-writing-mode: tb-rl;
   		writing-mode: vertical-rl;
 			font-family: $font_en;
 			font-size: 1.4rem;
 			letter-spacing: .4rem;
+			@include sp{
+				display: none;
+			}
 		}
 		&__image{
 			position: relative;
 			margin-left: 30px;
+			@include sp{
+				margin-left: 0;
+			}
 			&-pic{
 				border-radius: 999px;
+				@include sp{
+					height: 540px;
+					object-fit: cover;
+				}
 			}
 			&-txt{
 				position: absolute;
 				width: 495px;
 				bottom: 105px; left: 120px;
+				@include sp{
+					width: 260px;
+					bottom: 65px; left: 50%;
+					transform: translateX(-50%);
+				}
 			}
 		}
 		&__scroll{
@@ -28,8 +47,16 @@
 			bottom: 100px; left: 50%;
 			transform: translateX(-50%);
 			z-index: 1;
+			@include sp{
+				bottom: 35px;
+			}
 			span{
+				font-family: $font_en;
+				font-size: 1.8rem;
 				color: white;
+				@include sp{
+					font-size: 1.3rem;
+				}
 			}
 			::after{
 				content: "";
@@ -69,14 +96,26 @@
 			font-weight: 500;
 			letter-spacing: .1rem;
 			text-align: center;
+			@include sp{
+				font-size: 2.5rem;
+			}
 		}
 		&__content{
 			display: flex;
 			margin-top: 45px;
+			@include sp{
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		&__lb{}
 		&__rb{
 			margin-left: 90px;
+			@include sp{
+				margin-top: 35px;
+				margin-left: 0;
+			}
 		}
 		&__balloon{
 			display: block;
@@ -107,17 +146,27 @@
 		}
 		&__pic{
 			margin-top: 45px;
+			@include sp{
+				margin-top: 18px;
+				padding: 0 25px;
+			}
 		}
 
 		&__info{
 			background: #F9F9F9;
 			padding: 45px 105px;
 			border-radius: 35px;
+			@include sp{
+				padding: 40px 25px;
+			}
 		}
 		&__name{
 			font-size: 2.8rem;
 			font-weight: 500;
 			letter-spacing: .05rem;
+			@include sp{
+				font-size: 2.4rem;
+			}
 		}
 		&__feature{
 			font-size: 2rem;
@@ -126,12 +175,18 @@
 			&:first-of-type{
 				margin-top: 40px;
 			}
+			@include sp{
+				font-size: 1.8rem;
+			}
 		}
 		&__txt{
 			font-size: 1.6rem;
 			font-weight: 400;
 			letter-spacing: .05rem;
 			margin-top: 5px;
+			@include sp{
+				font-size: 1.4rem;
+			}
 		}
 	}
 	.works{
@@ -142,13 +197,19 @@
 			font-weight: 500;
 			letter-spacing: .1rem;
 			text-align: center;
+			@include sp{
+				font-size: 2.5rem;
+			}
 		}
 		&__card{
 			&-group{
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				gap: 0 20px;
+				gap: 45px 20px;
 				margin-top: 40px;
+				@include sp{
+					grid-template-columns: repeat(1, 1fr);
+				}
 			}
 			&-link{
 				display: block;
@@ -208,18 +269,30 @@
 			text-align: center;
 			color: #808080;
 			margin-top: 60px;
+			@include sp{
+				font-size: 1.6rem;
+				text-align: left;
+				margin-top: 35px;
+			}
 		}
 	}
 	.contact{
 		background: #E9F2F2;
 		margin-top: 125px;
 		padding: 70px 0;
+		@include sp{
+			margin-top: 70px;
+			padding: 50px 25px;
+		}
 		&__ttl{
 			font-family: $font_en;
 			font-size: 4.5rem;
 			font-weight: 500;
 			letter-spacing: .1rem;
 			text-align: center;
+			@include sp{
+				font-size: 2.5rem;
+			}
 		}
 
 		&__form{
@@ -228,30 +301,47 @@
 			padding: 60px 100px;
 			background: white;
 			border-radius: 20px;
+			@include sp{
+				width: 100%;
+				margin: 25px auto 0;
+				padding: 50px 25px;
+			}
 		}
 		&__row{
 			display: flex;
+			align-items: baseline;
+			@include sp{
+				flex-direction: column;
+			}
 			&:not(:first-of-type){
 				margin-top: 25px;
 			}
 		}
 		&__label{
 			display: flex;
+			align-items: center;
 			width: 185px;
 			font-size: 1.6rem;
 			font-weight: 500;
+			@include sp{
+				width: 100%;
+			}
 		}
 		&__required{
 			display: inline-block;
 			height: max-content;
 			height: -moz-max-content;
   		height: -webkit-max-content;
+			font-size: 1.2rem;
 			color: white;
 			line-height: 1;
 			background: #B0D0D1;
-			padding: 7px 15px;
+			padding: 5px 15px;
 			border-radius: 4px;
 			margin-left: auto;
+			@include sp{
+				margin-left: 16px;
+			}
 		}
 		&__input{
 			width: 412px;
@@ -260,6 +350,11 @@
 			border-radius: 4px;
 			margin-left: 50px;
 			padding: 10px 15px;
+			@include sp{
+				width: 100%;
+				margin-top: 16px;
+				margin-left: 0;
+			}
 			&::placeholder{
 				color: #B5B5B5;
 			}
