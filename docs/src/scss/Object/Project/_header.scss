@@ -9,7 +9,7 @@
 		.p-header{
 			&__inner{
 				display: flex;
-				padding: 20px 75px 0;
+				padding: 20px 75px;
 				justify-content: space-between;
 			}
 			&__logo{}
@@ -71,6 +71,7 @@
 		}
 		@include sp{
 			display: block;
+			height: 85px;
 		}
 		.p-header{
 			&__btn{
