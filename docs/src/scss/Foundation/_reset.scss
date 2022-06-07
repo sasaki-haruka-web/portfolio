@@ -8,8 +8,8 @@
    # Global selectors
    # ================================================================= */
 
-@import "/docs/_variable";
-@import "/docs/_mixin";
+@import "./variable";
+@import "./mixin";
 
 html {
   box-sizing: border-box;

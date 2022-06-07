@@ -1,4 +1,4 @@
-@import "/docs/_variable";
+@import "./variable";
 
 @mixin tabpc{
   @media screen and (min-width: ($tabpc)){

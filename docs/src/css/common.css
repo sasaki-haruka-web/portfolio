@@ -512,6 +512,43 @@ h1 {
 }
 
 /* Project ------------ */
+.p-article > * {
+  margin-top: 0;
+}
+.p-article__heading03 {
+  font-size: 2rem;
+  margin-top: 24px;
+}
+.p-article__txt {
+  font-size: 1.8rem;
+  margin-top: 16px;
+}
+.p-article__subtxt {
+  font-size: 1.5rem;
+  color: #808080;
+}
+.p-article__link {
+  color: #5A9395;
+  border-bottom: 1px solid #5A9395;
+  transition: all 0.3s ease-in-out;
+}
+.p-article__link:hover {
+  border-bottom: 1px solid transparent;
+}
+.p-article__btn {
+  margin-top: 24px;
+}
+.p-article__box {
+  background: #E9F2F2;
+  border: 1px solid #5A9395;
+  border-radius: 20px;
+  margin-top: 24px;
+  padding: 32px;
+}
+.p-article__box > * {
+  margin-top: 0;
+}
+
 .p-footer {
   padding: 24px 0;
 }
@@ -703,6 +740,32 @@ h1 {
   position: fixed;
 }
 
+.p-sidebar__box {
+  background: #F9F9F9;
+  border-radius: 8px;
+  padding: 32px;
+}
+.p-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.p-work__contents {
+  width: 665px;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+.p-work__ttl {
+  font-size: 2.8rem;
+  padding: 0 8px 8px 8px;
+  border-bottom: 1px solid #333333;
+}
+.p-work__eyecatch {
+  margin-top: 28px;
+}
+.p-work__article {
+  margin-top: 24px;
+}
 /* Utility ------------ */
 @media screen and (min-width: 768px) {
   .u-pc-hide {

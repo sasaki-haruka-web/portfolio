@@ -1,6 +1,23 @@
 .p-work{
   display: flex;
   justify-content: space-between;
-  &__contents{}
+  margin-top: 50px;
+  &__contents{
+    width: 665px;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+  &__ttl{
+    font-size: 2.8rem;
+    padding: 0 8px 8px 8px;
+    border-bottom: 1px solid #333333;
+  }
+  &__eyecatch{
+    margin-top: 28px;
+  }
+  &__article{
+    margin-top: 24px;
+  }
+
   &__sidebar{}
 }
