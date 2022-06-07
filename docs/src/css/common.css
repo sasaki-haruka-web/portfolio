@@ -4236,7 +4236,6 @@ h1 {
 .top .fv {
   display: flex;
   align-items: center;
-  margin-top: 25px;
   padding: 0 35px;
 }
 @media screen and (max-width: 767px) {
