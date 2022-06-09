@@ -745,10 +745,70 @@ h1 {
   border-radius: 8px;
   padding: 32px;
 }
+.p-sidebar__box > * {
+  margin-top: 0;
+}
+.p-sidebar__heading04 {
+  font-size: 1.8rem;
+  margin-top: 8px;
+}
+.p-sidebar__link {
+  color: #5A9395;
+  border-bottom: 1px solid #5A9395;
+  transition: all 0.3s ease-in-out;
+}
+.p-sidebar__link:hover {
+  border-bottom: 1px solid transparent;
+}
+.p-sidebar__link--newtab {
+  position: relative;
+  padding-right: 18px;
+}
+.p-sidebar__link--newtab::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/common/icn_link_new-tab.svg") no-repeat center/contain;
+  bottom: 2px;
+  right: 0;
+}
+.p-sidebar__txt {
+  font-size: 1.7rem;
+}
+.p-sidebar__skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.p-sidebar__skill-item {
+  font-size: 1.7rem;
+  color: #5A9395;
+  background: white;
+  border: 1px solid #5A9395;
+  border-radius: 999px;
+  padding: 2px 20px;
+}
+.p-sidebar__share {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-top: 24px;
+}
+.p-sidebar__share-list {
+  display: flex;
+  gap: 16px;
+}
+.p-sidebar__share-image {
+  width: 35px;
+}
+
 .p-work {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .p-work__contents {
   width: 665px;
