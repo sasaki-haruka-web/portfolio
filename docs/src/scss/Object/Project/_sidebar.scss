@@ -10,6 +10,9 @@
   &__heading04{
     font-size: 1.8rem;
     margin-top: 8px;
+    @include sp{
+      font-size: 1.6rem;
+    }
   }
   &__link{
     color: #5A9395;
@@ -35,6 +38,9 @@
   }
   &__txt{
     font-size: 1.7rem;
+    @include sp{
+      font-size: 1.5rem;
+    }
   }
   &__skill{
     display: flex;
@@ -48,12 +54,16 @@
       border: 1px solid #5A9395;
       border-radius: 999px;
       padding: 2px 20px;
+      @include sp{
+        font-size: 1.5rem;
+      }
     }
   }
 
   &__share{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 40px;
     margin-top: 24px;
     &-ttl{}

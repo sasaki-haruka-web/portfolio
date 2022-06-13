@@ -9,6 +9,9 @@
   &__txt{
     font-size: 1.8rem;
     margin-top: 16px;
+    @include sp{
+      font-size: 1.6rem;
+    }
   }
   &__subtxt{
     font-size: 1.5rem;
@@ -31,6 +34,9 @@
     border-radius: 20px;
     margin-top: 24px;
     padding: 32px;
+    @include sp{
+      padding: 24px;
+    }
     > *{
       margin-top: 0;
     }
