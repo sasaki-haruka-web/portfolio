@@ -540,6 +540,19 @@ h1 {
 .p-article__link:hover {
   border-bottom: 1px solid transparent;
 }
+.p-article__link--newtab {
+  position: relative;
+  padding-right: 18px;
+}
+.p-article__link--newtab::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/common/icn_link_new-tab.svg") no-repeat center/contain;
+  bottom: 2px;
+  right: 0;
+}
 .p-article__btn {
   margin-top: 24px;
 }

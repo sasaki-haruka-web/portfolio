@@ -24,6 +24,20 @@
     &:hover{
       border-bottom: 1px solid transparent;
     }
+    &--newtab{
+      position: relative;
+      padding-right: 18px;
+      &::after{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background:
+          url('../images/common/icn_link_new-tab.svg')
+          no-repeat center/contain;
+        bottom: 2px; right: 0;
+      }
+    }
   }
   &__btn{
     margin-top: 24px;
