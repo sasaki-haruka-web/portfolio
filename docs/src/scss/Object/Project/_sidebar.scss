@@ -1,4 +1,8 @@
 .p-sidebar{
+  width: 395px;
+  @include sp{
+    width: 100%;
+  }
   &__box{
     background: #F9F9F9;
     border-radius: 8px;
@@ -16,6 +20,7 @@
   }
   &__link{
     color: #5A9395;
+    word-wrap: break-word;
     border-bottom: 1px solid #5A9395;
     transition: $trans_cmn;
     &:hover{

@@ -763,6 +763,14 @@ h1 {
   position: fixed;
 }
 
+.p-sidebar {
+  width: 395px;
+}
+@media screen and (max-width: 767px) {
+  .p-sidebar {
+    width: 100%;
+  }
+}
 .p-sidebar__box {
   background: #F9F9F9;
   border-radius: 8px;
@@ -782,6 +790,7 @@ h1 {
 }
 .p-sidebar__link {
   color: #5A9395;
+  word-wrap: break-word;
   border-bottom: 1px solid #5A9395;
   transition: all 0.3s ease-in-out;
 }
