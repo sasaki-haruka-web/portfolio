@@ -541,6 +541,7 @@ h1 {
   border-bottom: 1px solid transparent;
 }
 .p-article__link--newtab {
+  word-break: break-all;
   position: relative;
   padding-right: 18px;
 }
@@ -4441,7 +4442,6 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .top .fv {
-    margin-top: 85px;
     padding: 0 25px;
   }
 }
@@ -4540,7 +4540,7 @@ h1 {
   }
 }
 .top .profile {
-  margin-top: 90px;
+  margin-top: 85px;
 }
 .top .profile__ttl {
   font-family: "Poppins", sans-serif;
@@ -4655,7 +4655,7 @@ h1 {
   }
 }
 .top .works {
-  margin-top: 85px;
+  margin-top: 70px;
 }
 .top .works__ttl {
   font-family: "Poppins", sans-serif;

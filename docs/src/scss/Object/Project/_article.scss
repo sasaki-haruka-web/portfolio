@@ -25,6 +25,7 @@
       border-bottom: 1px solid transparent;
     }
     &--newtab{
+      word-break: break-all;
       position: relative;
       padding-right: 18px;
       &::after{
