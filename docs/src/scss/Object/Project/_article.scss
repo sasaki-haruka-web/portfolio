@@ -40,6 +40,16 @@
       }
     }
   }
+  &__figure{
+    margin-top: 24px;
+    &-image{}
+    &-caption{
+      font-size: 1.5rem;
+      color: #808080;
+      text-align: center;
+      margin-top: 8px;
+    }
+  }
   &__btn{
     margin-top: 24px;
   }

@@ -20,7 +20,7 @@
   }
   &__link{
     color: #5A9395;
-    word-wrap: break-word;
+    word-break: break-all;
     border-bottom: 1px solid #5A9395;
     transition: $trans_cmn;
     &:hover{
